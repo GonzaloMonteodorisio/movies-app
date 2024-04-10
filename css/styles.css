@@ -1,0 +1,79 @@
+/* Estilo Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 0.5em;
+}
+
+/* Estilos para móviles primero */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.pelicula {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pelicula img {
+  width: 100%;
+  display: block;
+}
+
+.pelicula-info {
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  /* Estilos para tablets */
+  nav ul {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Estilos para PC */
+  .peliculas {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
