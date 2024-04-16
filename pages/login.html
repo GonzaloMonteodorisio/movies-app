@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script
+      src="https://kit.fontawesome.com/f3686b3edb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/login.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-content">
+        <h1 id="title">Registro</h1>
+        <div class="botones">
+          <button type="button" id="registro">Registrarse</button>
+          <button type="button" class="color" id="ingreso">Ingresar</button>
+        </div>
+        <div class="form">
+          <form id="formulario">
+            <div class="input-group">
+              <i class="fa-solid fa-user"></i
+              ><input
+                type="text"
+                id="userName"
+                name="userName"
+                placeholder="Usuario "
+                required
+              />
+            </div>
+            <p id="alertName" class="ocultar"></p>
+            <div class="input-group" id="email" >
+              <i class="fa-solid fa-envelope"></i
+              ><input
+                type="email"
+                name="userEmail"
+                id="userEmail"
+                placeholder="Email"
+                
+              />
+            </div>
+            <p id="alertEmail" class="ocultar"></p>
+            <div class="input-group">
+              <i class="fa-solid fa-lock"></i
+              ><input
+                type="password"
+                name="userPassword"
+                id="userPassword"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+            <div class="acceder">
+              <button type="submit" id="acceder">Acceder</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
