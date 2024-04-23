@@ -21,6 +21,7 @@ ingreso.addEventListener("click", () => {
   email.classList.add("ocultar");
   ingreso.classList.add("color")
   registro.classList.remove("color")
+  email.classList.remove("required")
 });
 
 registro.addEventListener("click", () => {
