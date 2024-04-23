@@ -1,0 +1,36 @@
+/* Navbar Styles */
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 0.5em;
+}
+
+/* Estilos para móviles primero */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  /* Estilos para tablets */
+  nav ul {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
