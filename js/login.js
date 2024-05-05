@@ -120,4 +120,6 @@ formulario.addEventListener("submit", (e) => {
     return;
   }
   console.log("enviado");
+  window.location.href = "/";
 });
+
