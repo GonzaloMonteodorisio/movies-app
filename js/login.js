@@ -40,6 +40,7 @@ registro.addEventListener("click", () => {
   title.textContent = "Registro";
   userName.classList.remove("is-invalid")
   userName.classList.remove("is-valid")
+  alertName.classList.add("ocultar")
   userName.value=""
   userPassword.classList.remove("is-invalid")
   userPassword.classList.remove("is-valid")
