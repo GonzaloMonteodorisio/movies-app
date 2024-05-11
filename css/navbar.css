@@ -1,36 +1,86 @@
-/* Navbar Styles */
-nav {
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-nav ul {
-  list-style: none;
-  padding: 1em 0;
+.header {
+  height: 80px;
+  background-color: silver;
 }
 
-nav a {
+a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
-nav ul li {
-  padding: 0.5em;
+ol,
+ul {
+  list-style: none;
 }
 
-/* Estilos para móviles primero */
-nav ul {
+.ul_links {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  gap: 1rem;
+  text-transform: uppercase;
 }
 
-/* Media Queries */
-@media (min-width: 600px) {
-  /* Estilos para tablets */
-  nav ul {
-      flex-direction: row;
-      justify-content: center;
+.label_hamburguesa {
+  display: none;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.menu_hamburguesa {
+  display: none;
+}
+
+.menu_hamburguesa:checked + .ul_links {
+  height: calc(50vh - 80px);
+}
+
+@media (max-width: 600px) {
+  .label_hamburguesa {
+    display: inline;
+    margin-top: 5px;
+  }
+
+  .ul_links {
+    width: 20vh;
+    background-color: #333;
+    position: absolute;
+    /* height: calc(100vh - 80px); */
+    top: 80px;
+    right: 0px;
+    height: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+
+    transition: all 0.3s;
+  }
+
+  .link {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
   }
 }
