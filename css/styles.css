@@ -36,6 +36,10 @@ body {
   text-align: center;
 }
 
+.ocultar {
+  display: none;
+}
+
 @media (min-width: 900px) {
   /* Estilos para PC */
   .peliculas {
