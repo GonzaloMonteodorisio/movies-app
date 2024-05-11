@@ -51,6 +51,7 @@ registro.addEventListener("click", () => {
   email.classList.remove("ocultar");
   ingreso.classList.remove("color");
   registro.classList.add("color");
+  alertName.classList.add("ocultar");
   isRegistro = true; // Cambiamos el estado a registro
 });
 
@@ -119,4 +120,6 @@ formulario.addEventListener("submit", (e) => {
     return;
   }
   console.log("enviado");
+
+  window.location.href = '/';
 });
