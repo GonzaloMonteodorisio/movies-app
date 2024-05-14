@@ -6,7 +6,7 @@
 
 body {
   background-color: #333;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -14,25 +14,30 @@ body {
   background-color: silver;
 }
 
+.title{
+  color: black;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 1rem ;
+}
+
+.item_logo{
+  height: 30px;
+  width: 30px;
+  color: black;
+}
+
 a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
 
-ol,
 ul {
   list-style: none;
-}
-
-.ul_links {
-  display: flex;
-  gap: 1rem;
-  text-transform: uppercase;
-}
-
-.label_hamburguesa {
-  display: none;
 }
 
 .navbar {
@@ -49,38 +54,63 @@ ul {
   display: none;
 }
 
-.menu_hamburguesa:checked + .ul_links {
-  height: calc(50vh - 80px);
+.menu_hamburguesa:checked + .ul_link {
+
+  height: calc(70vh - 80px);
+  padding: 10px 0 0 0;
+  margin: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 0;
+  background-color: silver;
+  
 }
 
-@media (max-width: 600px) {
+.list_icon {
+  color: black;
+}
+
+.ul_link {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  display: inline-flex;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 3rem;
+  cursor: pointer;
+  margin: 10px;
+
+  transition: all .3s;
+}
+
+.link {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link:hover{
+  color: rgb(63, 57, 57);
+}
+
+@media (min-width:768px){
   .label_hamburguesa {
-    display: inline;
-    margin-top: 5px;
+    display: none;
+  }
+  .ul_link {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
   }
 
-  .ul_links {
-    width: 20vh;
-    background-color: #333;
-    position: absolute;
-    /* height: calc(100vh - 80px); */
-    top: 80px;
-    right: 0px;
-    height: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    cursor: pointer;
-
-    transition: all 0.3s;
-  }
-
-  .link {
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-  }
 }

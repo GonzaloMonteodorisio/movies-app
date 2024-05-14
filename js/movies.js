@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded" , () => {
 const fetchData = async () => {
     
     try {
-        loadingData(true)
+        // loadingData(true)
         
         const res = await fetch("https://www.omdbapi.com/?s=year&apikey=73382656")
         const data = await res.json()
@@ -15,7 +15,7 @@ const fetchData = async () => {
     } catch (error) {
         console.log(error)
     } finally{
-        loadingData(false)
+        // loadingData(false)
     }
 }
 
@@ -38,11 +38,11 @@ const pintarCard = data => {
     peliculas.appendChild(fragment)
 }
 
-const loadingData= (estado)=> {
-    const loading = document.getElementById("loading")
-    if(estado){
-        loading.classList.remove("d-none")
-    }else{
-        loading.classList.add("d-none")
-    }
-}
+// const loadingData= (estado)=> {
+//     const loading = document.getElementById("loading")
+//     if(estado){
+//         loading.classList.remove("d-none")
+//     }else{
+//         loading.classList.add("d-none")
+//     }
+// }
