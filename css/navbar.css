@@ -1,36 +1,116 @@
-/* Navbar Styles */
-nav {
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav ul {
-  list-style: none;
-  padding: 1em 0;
+.header {
+  height: 80px;
+  background-color: silver;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+.title{
+  color: black;
 }
 
-nav ul li {
-  padding: 0.5em;
-}
-
-/* Estilos para móviles primero */
-nav ul {
+.logo {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 1rem ;
 }
 
-/* Media Queries */
-@media (min-width: 600px) {
-  /* Estilos para tablets */
-  nav ul {
-      flex-direction: row;
-      justify-content: center;
+.item_logo{
+  height: 30px;
+  width: 30px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.menu_hamburguesa {
+  display: none;
+}
+
+.menu_hamburguesa:checked + .ul_link {
+
+  height: calc(70vh - 80px);
+  padding: 10px 0 0 0;
+  margin: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 0;
+  background-color: silver;
+  
+}
+
+.list_icon {
+  color: black;
+}
+
+.ul_link {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  display: inline-flex;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 3rem;
+  cursor: pointer;
+  margin: 10px;
+
+  transition: all .3s;
+}
+
+.link {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link:hover{
+  color: rgb(63, 57, 57);
+}
+
+@media (min-width:768px){
+  .label_hamburguesa {
+    display: none;
   }
+  .ul_link {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
 }
