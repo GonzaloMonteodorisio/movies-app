@@ -21,26 +21,11 @@
     <header class="header">
       <nav class="navbar">
         <div class="logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="item_logo"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
-            />
-            <path
-              d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
-            />
-            <path
-              d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="item_logo" viewBox="0 0 16 16">
+            <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z"/>
           </svg>
-          <h1 class="title">Logo</h1>
-        </div>
+        <h1 class="title">Harry Potter App</h1>
+      </div>
         <label for="menu_hamburguesa" class="label_hamburguesa">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -56,29 +41,25 @@
             />
           </svg>
         </label>
-        <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa" />
+        <input class="menu_hamburguesa" type="checkbox"  id="menu_hamburguesa" />
         <ul class="ul_link">
-          <li class="li_link">
-            <a class="link" href="../index.html">Inicio</a>
-          </li>
-          <li class="li_link"><a class="link" href="">Contacto</a></li>
-          <li class="li_link">
-            <a class="link" href="./pages/login.html">Login</a>
-          </li>
+          <li class="li_link"><a class="link" href="/">Inicio</a></li>
+          <li class="li_link"><a class="link" href="./">Contacto</a></li>
+          <li class="li_link"><a class="link" href="./pages/login.html">Login</a></li>
           <li class="li_link"><a class="link" href="">Genero</a></li>
         </ul>
       </nav>
     </header>
     <div class="containers">
       <div class="form-contents">
-        <h1 id="title">Registro</h1>
+        <h2 id="title">Registro</h2>
         <div class="botones">
           <button type="button" class="btn" id="registro">Registrarse</button>
           <button type="button" class="color btn" id="ingreso">Ingresar</button>
         </div>
         <div class="forms">
           <form class="row g-3" id="formulario" novalidate>
-            <div class="col-md-4">
+            <div class="input">
               <i class="fa-solid fa-user"></i>
               <input
                 type="text"
@@ -91,7 +72,7 @@
 
             <p id="alertName" class="ocultar"></p>
 
-            <div class="col-md-4" id="email">
+            <div class="input" id="email">
               <i class="fa-solid fa-envelope"></i>
               <input
                 type="email"
@@ -104,7 +85,7 @@
 
             <p id="alertEmail" class="ocultar"></p>
 
-            <div class="col-md-4">
+            <div class="input">
               <i class="fa-solid fa-lock"></i>
               <div class="input-group">
                 <input

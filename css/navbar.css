@@ -6,16 +6,27 @@
 
 body {
   background-color: #333;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
 }
+
+
 
 .header {
+  width: 100%;
   height: 80px;
-  background-color: silver;
+  background-color: rgb(255, 255, 255, 0.5);
+  /* position: fixed; */
 }
 
-.title{
-  color: black;
+.title, .link{
+    background: linear-gradient(to right, #004aad 20%, #24292c 40%, #24292c 60%, #004aad 80% );
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: shine 6s linear infinite;
+  
 }
 
 .logo {
@@ -26,10 +37,13 @@ body {
   padding-left: 1rem ;
 }
 
-.item_logo{
-  height: 30px;
-  width: 30px;
-  color: black;
+.logo i{
+ font-size: 50px;
+ background: linear-gradient(to right, #004aad 20%, #24292c 40%, #24292c 60%, #004aad 80% );
+ background-size: 200%;
+ color: transparent;
+ background-clip: text;
+ animation: shine 6s linear infinite;
 }
 
 a {
@@ -64,12 +78,16 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   right: 0;
-  background-color: silver;
+  /* background-color: rgb(255, 255, 255, 0.5);  */
+  background-color: rgb(192, 192, 192, 0.8);
+  z-index: 1; 
   
 }
 
+
+
 .list_icon {
-  color: black;
+  color: #004aad;
 }
 
 .ul_link {
@@ -92,16 +110,19 @@ ul {
 
 .link {
   font-size: 1rem;
-  color: black;
+  /* color: black; */
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .link:hover{
   color: rgb(63, 57, 57);
+  border-bottom: 1px solid #004aad ;
+
 }
 
-@media (min-width:768px){
+
+@media (min-width:890px){
   .label_hamburguesa {
     display: none;
   }
@@ -113,4 +134,15 @@ ul {
     gap: 2rem;
   }
 
+
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.menu_hamburguesa:checked + .link{
+  color: black;
 }
