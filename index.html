@@ -17,7 +17,6 @@
             <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
             <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
           </svg>
-        <h1 class="title">Logo</h1>
       </div>
         <label for="menu_hamburguesa" class="label_hamburguesa">
           <svg
@@ -30,43 +29,48 @@
           >
             <path
               fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5.5 0 0 1-.5-.5"
             />
           </svg>
         </label>
         <input class="menu_hamburguesa" type="checkbox"  id="menu_hamburguesa" />
         <ul class="ul_link">
           <li class="li_link"><a class="link" href="./index.html">Inicio</a></li>
-          <li class="li_link"><a class="link" href="./">Contacto</a></li>
+          <li class="li_link"><a class="link" href="./contacto.html">Contacto</a></li>
           <li class="li_link"><a class="link" href="./pages/login.html">Login</a></li>
-          <li class="li_link"><a class="link" href="./pages/acerca-de.html">Acerca de</a></li>
+          <li class="li_link"><a class="link" href="./pages/info.html">Más Información</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <h1 class="encabezado">Inicio</h1>
       <div class="d-flex align-items-center mt-50" id="loading">
         <strong>Cargando...</strong>
         <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
       </div> 
+      <div class="filter-container">
+        <label for="house-filter">Filtrar por casa:</label>
+        <select id="house-filter">
+          <option value="all">Todas</option>
+          <option value="Gryffindor">Gryffindor</option>
+          <option value="Slytherin">Slytherin</option>
+          <option value="Hufflepuff">Hufflepuff</option>
+          <option value="Ravenclaw">Ravenclaw</option>
+        </select>
+      </div>
       <section class="personajes">
       </section>
       <template id="template-card">
-      <!-- Bloques de película individuales empiezan aquí -->
-      <!-- Repite el siguiente div para cada película, reemplaza # con el link y 'ruta_imagen.jpg' con la imagen de tu película -->
-      <div class="pelicula">
-          <img src="" alt="" class="card-img" />
-
+        <div class="pelicula">
+          <img data-src="" alt="" class="card-img lazy" />
           <div class="pelicula-info">
             <h3></h3>
             <p></p>
             <span></span>
           </div>
-        </a>
-      </div>
-
-      <!-- ... más películas ... -->
-    </template>
+        </div>
+      </template>
     </main>
 
     <footer>
@@ -75,3 +79,4 @@
     <script src="js/movies.js"></script>
   </body>
 </html>
+

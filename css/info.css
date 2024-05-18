@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #333;
 }
 
 main {
@@ -10,53 +10,29 @@ main {
   flex-wrap: wrap;
   padding: 20px;
   justify-content: space-around;
-  color: #fff;
 }
 
-.about {
+.info-peliculas {
   flex: 2;
   text-align: center;
 }
 
-.about h1 {
+.encabezado {
   font-size: 2em;
   margin-bottom: 20px;
+  color: #04bd7d;
 }
 
-.about p {
+.info-peliculas p, .info-peliculas ul {
   font-size: 1.2em;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #f0f0f0;
 }
 
-.team {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.team-member {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin: 10px;
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.team-member h2 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-.team-member p {
-  font-size: 1em;
-  color: #666;
+.info-peliculas ul {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 aside {
@@ -69,6 +45,7 @@ aside {
 }
 
 aside h2 {
+  color: #474747;
   font-size: 1.5em;
   margin-bottom: 20px;
 }

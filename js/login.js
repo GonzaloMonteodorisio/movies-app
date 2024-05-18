@@ -12,7 +12,7 @@ const alertName = document.querySelector("#alertName");
 const alertEmail = document.querySelector("#alertEmail");
 const alertPassword = document.querySelector("#alertPassword")
 
-const title = document.querySelector("#title");
+const title = document.querySelector("#title-logo");
 const registro = document.querySelector("#registro");
 const ingreso = document.querySelector("#ingreso");
 const email = document.querySelector("#email");

@@ -11,6 +11,27 @@ body {
   color: #333;
 }
 
+.encabezado {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.filter-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-container label {
+  color: #74e036;
+}
+
+.filter-container label, .filter-container select {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
 
 .personajes {
   display: grid;
