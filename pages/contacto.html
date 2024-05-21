@@ -1,65 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="/css/navbar.css">
+    <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Cinzel+Decorative:wght@400;700&family=MedievalSharp&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3686b3edb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-          <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="item_logo" viewBox="0 0 16 16">
-              <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707zM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1zM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707zM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0z"/>
-            </svg>
-          <h1 class="title">Harry Potter App</h1>
-        </div>
-          <label for="menu_hamburguesa" class="label_hamburguesa">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="currentColor"
-              class="list_icon"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-              />
-            </svg>
-          </label>
-          <input class="menu_hamburguesa" type="checkbox"  id="menu_hamburguesa" />
-          <ul class="ul_link">
-            <li class="li_link"><a class="link" href="./index.html">Inicio</a></li>
-            <li class="li_link"><a class="link" href="./">Contacto</a></li>
-            <li class="li_link"><a class="link" href="./pages/login.html">Login</a></li>
-            <li class="li_link"><a class="link" href="">Genero</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section id="contacto" class="contacto">
-          <h2>Contacto</h2>
-          <p>¡Envía tu lechuza con un mensaje o usa nuestro formulario mágico para contactarnos!</p>
-          <form id="form-contacto" action="tu-servidor-de-contacto" method="post">
-              <div class="form-group">
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombre" name="nombre" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Correo Electrónico:</label>
-                  <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                  <label for="mensaje">Mensaje:</label>
-                  <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-              </div>
-              <button type="submit">Enviar</button>
-          </form>
-      </section>
-      
-</body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-hat-wizard"></i>
+      <h1 class="title">Harry Potter App</h1>
+    </div>
+      <label for="menu_hamburguesa" class="label_hamburguesa">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="list_icon"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </label>
+      <input class="menu_hamburguesa" type="checkbox"  id="menu_hamburguesa" />
+      <ul class="ul_link">
+        <li class="li_link"><a class="link" href="./index.html">Inicio</a></li>
+        <li class="li_link"><a class="link" href="./">Contacto</a></li>
+        <li class="li_link"><a class="link" href="./pages/login.html">Login</a></li>
+        <li class="li_link"><a class="link" href="">Genero</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <div class="form_input">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form_input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form_input">
+                <label>Sexo:</label>
+                <div class="radio-group">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"> Masculino
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"> Femenino
+                    </label>
+                </div>
+                <span class="error" id="genderError"></span>
+            </div>
+            <div class="form_input">
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <span class="error" id="commentsError"></span>
+            </div>
+            <div class="form_input">
+                <label for="country">País de Origen:</label>
+                <select id="country" name="country">
+                    <option value="">Seleccione un país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="mexico">Brasil</option>
+                    <option value="spain">Uruguay</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Otro</option>
+                    <!-- Puedes agregar más opciones de países aquí -->
+                </select>
+                <span class="error" id="countryError"></span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
+    <script src="/js/validation.js"></script>
+</body>
 </html>
+
+

@@ -44,6 +44,8 @@ body {
  color: transparent;
  background-clip: text;
  animation: shine 6s linear infinite;
+ margin-bottom: 10px;
+
 }
 
 a {
