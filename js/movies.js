@@ -26,6 +26,7 @@ const pintarCard = data => {
         const clone = templateCard.cloneNode(true);
         clone.querySelector("h3").textContent = item.name;
         clone.querySelector("img").setAttribute("data-src", item.image);
+        clone.querySelector("img").setAttribute("height", "250px");
         clone.querySelector("img").setAttribute("alt", item.name);
         clone.querySelector("p").textContent = `Casa: ${item.house}`;
         clone.querySelector("span").textContent = `${item.gender === 'male' ? `Actor: ${item.actor}` : `Actriz: ${item.actor}`}`;
