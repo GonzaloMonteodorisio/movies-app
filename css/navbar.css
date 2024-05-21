@@ -11,8 +11,6 @@ body {
   font-style: normal;
 }
 
-
-
 .header {
   width: 100%;
   height: 80px;
@@ -21,6 +19,7 @@ body {
 }
 
 .title-logo, .link{
+    font-size: 1.5rem;
     background: linear-gradient(to right, #004aad 20%, #24292c 40%, #24292c 60%, #004aad 80% );
     background-size: 200%;
     color: transparent;
@@ -118,8 +117,6 @@ ul {
 
 .link:hover{
   color: rgb(63, 57, 57);
-  border-bottom: 1px solid #004aad ;
-
 }
 
 
