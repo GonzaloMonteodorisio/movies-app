@@ -1,0 +1,67 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.info-peliculas {
+  flex: 2;
+  text-align: center;
+}
+
+.encabezado {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #04bd7d;
+}
+
+.info-peliculas p, .info-peliculas ul {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #f0f0f0;
+}
+
+.info-peliculas ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+aside {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 10px;
+}
+
+aside h2 {
+  color: #474747;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+aside p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

@@ -20,13 +20,12 @@ body {
   /* position: fixed; */
 }
 
-.title, .link{
+.title-logo, .link{
     background: linear-gradient(to right, #004aad 20%, #24292c 40%, #24292c 60%, #004aad 80% );
     background-size: 200%;
     color: transparent;
     background-clip: text;
     animation: shine 6s linear infinite;
-  
 }
 
 .logo {
