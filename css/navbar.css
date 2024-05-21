@@ -120,7 +120,7 @@ ul {
 }
 
 
-@media (min-width:890px){
+@media (min-width:978px){
   .label_hamburguesa {
     display: none;
   }
@@ -131,8 +131,12 @@ ul {
     flex-direction: row;
     gap: 2rem;
   }
+}
 
-
+@media (max-width:482px){
+  .title-logo {
+    display: none;
+  }
 }
 
 @keyframes shine {
