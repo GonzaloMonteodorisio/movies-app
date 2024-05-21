@@ -7,7 +7,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-image: url(/img/harry-potter.jpeg);
+  background-size: 100% auto; 
+  background-repeat: repeat;
   color: #333;
 }
 
@@ -41,7 +43,7 @@ body {
 }
 
 .pelicula {
-  background-color: #fff;
+  background-color: rgb(192, 192, 192, 0.6);
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -66,4 +68,9 @@ body {
   .personajes {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
+
+  body {
+    background-repeat: cover;
+  }
 }
+

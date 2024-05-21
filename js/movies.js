@@ -122,6 +122,7 @@ const pintarCard = data => {
             clone.querySelector("p").textContent = `Casa: ${item.house}`
         }
         clone.querySelector("span").textContent = `${item.gender === 'male' ? `Actor: ${item.actor}` : `Actriz: ${item.actor}`}`
+        
 
         
         
