@@ -12,12 +12,12 @@ const alertName = document.querySelector("#alertName");
 const alertEmail = document.querySelector("#alertEmail");
 const alertPassword = document.querySelector("#alertPassword")
 
-const title = document.querySelector("#title-logo");
+const title = document.querySelector("#title");
 const registro = document.querySelector("#registro");
 const ingreso = document.querySelector("#ingreso");
 const email = document.querySelector("#email");
 
-let isRegistro = true; // Variable para indicar si es un formulario de registro
+let isRegistro = true; 
 
 ingreso.addEventListener("click", () => {
   userName.classList.remove("is-invalid")
@@ -33,7 +33,7 @@ ingreso.addEventListener("click", () => {
   email.classList.add("ocultar");
   ingreso.classList.add("color");
   registro.classList.remove("color");
-  isRegistro = false; // Cambiamos el estado a ingreso
+  isRegistro = false; 
 });
 
 registro.addEventListener("click", () => {
@@ -52,7 +52,7 @@ registro.addEventListener("click", () => {
   ingreso.classList.remove("color");
   registro.classList.add("color");
   alertName.classList.add("ocultar");
-  isRegistro = true; // Cambiamos el estado a registro
+  isRegistro = true; 
 });
 
 const PintarMensajeError = (errores) => {

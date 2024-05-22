@@ -54,7 +54,7 @@ ul {
   list-style: none;
 }
 
-.navbar {
+.navbar-container {
   height: 100%;
   display: flex;
   justify-content: space-between;
