@@ -10,6 +10,7 @@ body {
     /* margin: 0;
     font-family: Arial, sans-serif; */
     color: #74e036;
+    margin-bottom: 50px;
 }
 .form-container {
     display: flex;
