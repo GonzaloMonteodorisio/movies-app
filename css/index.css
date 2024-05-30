@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/img/harry-potter.jpeg);
+  background-image: url(../assets/imgages/harry-potter.jpeg);
   background-size: 100% auto; 
   background-repeat: repeat;
   height: 100vh;
