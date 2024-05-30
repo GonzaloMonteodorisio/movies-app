@@ -15,16 +15,22 @@ body {
   width: 100%;
   height: 80px;
   background-color: rgb(255, 255, 255, 0.5);
-  /* position: fixed; */
 }
 
-.title-logo, .link{
-    font-size: 1.5rem;
-    background: linear-gradient(to right, #004aad 20%, #24292c 40%, #24292c 60%, #004aad 80% );
-    background-size: 200%;
-    color: transparent;
-    background-clip: text;
-    animation: shine 6s linear infinite;
+.title-logo,
+.link {
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to right,
+    #004aad 20%,
+    #24292c 40%,
+    #24292c 60%,
+    #004aad 80%
+  );
+  background-size: 200%;
+  color: transparent;
+  background-clip: text;
+  animation: shine 6s linear infinite;
 }
 
 .logo {
@@ -32,18 +38,23 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding-left: 1rem ;
+  padding-left: 1rem;
 }
 
-.logo i{
- font-size: 50px;
- background: linear-gradient(to right, #004aad 20%, #24292c 40%, #24292c 60%, #004aad 80% );
- background-size: 200%;
- color: transparent;
- background-clip: text;
- animation: shine 6s linear infinite;
- margin-bottom: 10px;
-
+.logo i {
+  font-size: 50px;
+  background: linear-gradient(
+    to right,
+    #004aad 20%,
+    #24292c 40%,
+    #24292c 60%,
+    #004aad 80%
+  );
+  background-size: 200%;
+  color: transparent;
+  background-clip: text;
+  animation: shine 6s linear infinite;
+  margin-bottom: 10px;
 }
 
 a {
@@ -69,7 +80,6 @@ ul {
 }
 
 .menu_hamburguesa:checked + .ul_link {
-
   height: calc(70vh - 80px);
   padding: 10px 0 0 0;
   margin: 0;
@@ -78,13 +88,9 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   right: 0;
-  /* background-color: rgb(255, 255, 255, 0.5);  */
   background-color: rgb(192, 192, 192, 0.8);
-  z-index: 1; 
-  
+  z-index: 1;
 }
-
-
 
 .list_icon {
   color: #004aad;
@@ -99,28 +105,24 @@ ul {
   justify-content: center;
   height: 0;
   overflow: hidden;
-  /* align-items: center; */
   flex-direction: column;
   gap: 3rem;
   cursor: pointer;
   margin: 10px;
-
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .link {
   font-size: 1rem;
-  /* color: black; */
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.link:hover{
+.link:hover {
   color: rgb(63, 57, 57);
 }
 
-
-@media (min-width:978px){
+@media (min-width: 1014px) {
   .label_hamburguesa {
     display: none;
   }
@@ -133,7 +135,7 @@ ul {
   }
 }
 
-@media (max-width:482px){
+@media (max-width: 482px) {
   .title-logo {
     display: none;
   }
@@ -145,6 +147,6 @@ ul {
   }
 }
 
-.menu_hamburguesa:checked + .link{
+.menu_hamburguesa:checked + .link {
   color: black;
 }

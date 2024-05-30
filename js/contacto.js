@@ -1,5 +1,5 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+    event.preventDefault();  
 
     let valid = true;
 

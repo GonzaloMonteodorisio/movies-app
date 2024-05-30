@@ -5,11 +5,27 @@
 }
 
 body {
-  background-image: url(/img/harry-potter.jpeg);
+  background-image: url(../assets/imgages/harry-potter.jpeg);
   background-size: 100% auto; 
   background-repeat: repeat;
   height: 100vh;
+}
 
+.bienvenida{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.bienvenida p {
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
 }
 
 .containers {
@@ -24,7 +40,6 @@ body {
 h2 {
   font-weight: bold;
 }
-
 
 .form-control {
   width: 100%;
@@ -48,10 +63,6 @@ h2 {
 form div {
   display: inline;
 }
-
-/* .forms {
-  padding: 0 2em;
-} */
 
 .botones {
   height: 2em;
@@ -155,3 +166,26 @@ button.color {
 .ocultar {
   display: none;
 }
+
+@media (max-width:1065px){
+  h1{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:750px){
+  .bienvenida p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width:680px){
+  h1 {
+    font-size: 1rem;
+  }
+
+  .bienvenida p {
+    display: none;
+  }
+}
+
