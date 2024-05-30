@@ -121,5 +121,5 @@ formulario.addEventListener("submit", (e) => {
   }
   console.log("enviado");
 
-  window.location.href = '/';
+  window.location.href = '../pages/personajes.html';
 });

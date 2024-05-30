@@ -10,7 +10,7 @@ body {
     /* margin: 0;
     font-family: Arial, sans-serif; */
     color: #74e036;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 .form-container {
     display: flex;
@@ -30,6 +30,7 @@ body {
 }
 .form_input label {
     margin-bottom: 5px;
+    letter-spacing: 2px;
 }
 .form_input input,
 .form_input textarea,
@@ -38,7 +39,11 @@ body {
     font-size: 14px;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 10px;
+    border-color: black;
+    background-color: #ccc;
 }
+
 .form_input .radio-group {
     display: flex;
     justify-content: space-between;

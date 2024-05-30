@@ -12,6 +12,24 @@ body {
 
 }
 
+.bienvenida{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.bienvenida p {
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+}
+
+
 .containers {
   margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -155,3 +173,26 @@ button.color {
 .ocultar {
   display: none;
 }
+
+@media (max-width:1065px){
+  h1{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:750px){
+  .bienvenida p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width:680px){
+  h1 {
+    font-size: 1rem;
+  }
+
+  .bienvenida p {
+    display: none;
+  }
+}
+
