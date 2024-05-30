@@ -9,7 +9,6 @@ body {
   background-size: 100% auto; 
   background-repeat: repeat;
   height: 100vh;
-
 }
 
 .bienvenida{
@@ -29,7 +28,6 @@ h1 {
   font-weight: bold;
 }
 
-
 .containers {
   margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +40,6 @@ h1 {
 h2 {
   font-weight: bold;
 }
-
 
 .form-control {
   width: 100%;
@@ -66,10 +63,6 @@ h2 {
 form div {
   display: inline;
 }
-
-/* .forms {
-  padding: 0 2em;
-} */
 
 .botones {
   height: 2em;

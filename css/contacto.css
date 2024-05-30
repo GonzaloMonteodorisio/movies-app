@@ -1,67 +1,67 @@
-
 body {
   background-image: url(/img/harry-potter.jpeg);
-  background-size: 100% auto; 
+  background-size: 100% auto;
   background-repeat: repeat;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    height: 100vh;
-    /* margin: 0;
-    font-family: Arial, sans-serif; */
-    color: #74e036;
-    margin-bottom: 200px;
+  height: 100vh;
+  color: #74e036;
+  margin-bottom: 200px;
 }
+
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 2rem 9rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 2rem 9rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .form_input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
 }
+
 .form_input label {
-    margin-bottom: 5px;
-    letter-spacing: 2px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
 }
+
 .form_input input,
 .form_input textarea,
 .form_input select {
-    padding: 8px;
-    font-size: 14px;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border-color: black;
-    background-color: #ccc;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-color: black;
+  background-color: #ccc;
 }
 
 .form_input .radio-group {
-    display: flex;
-    justify-content: space-between;
-}
-.error {
-    color: red;
-    font-size: 12px;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #74e036;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #468621;
+  display: flex;
+  justify-content: space-between;
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #74e036;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #468621;
+}

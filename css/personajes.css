@@ -1,4 +1,3 @@
-/* Estilo Base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,7 +63,6 @@ body {
 }
 
 @media (min-width: 900px) {
-  /* Estilos para PC */
   .personajes {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
