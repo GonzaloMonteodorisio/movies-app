@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const fetchData = async () => {
     try {
         loadingData(true);
-        const res = await fetch("https://hp-api.onrender.com/api/characters");
+        const res = await fetch("https://harry-potter-api.onrender.com/personajes");
         const data = await res.json();
         console.info('data: ', data);
         pintarCard(data);
@@ -24,13 +24,12 @@ const pintarCard = data => {
 
     data.forEach(item => {
         const clone = templateCard.cloneNode(true);
-        clone.querySelector("h3").textContent = item.name;
-        clone.querySelector("img").setAttribute("data-src", item.image);
+        clone.querySelector("h3").textContent = item.personaje;
+        clone.querySelector("img").setAttribute("data-src", item.imagen);
         clone.querySelector("img").setAttribute("height", "250px");
-        clone.querySelector("img").setAttribute("alt", item.name);
-        clone.querySelector("p").textContent = `Casa: ${item.house}`;
-        clone.querySelector("span").textContent = `${item.gender === 'male' ? `Actor: ${item.actor}` : `Actriz: ${item.actor}`}`;
-        clone.querySelector(".pelicula").dataset.house = item.house;
+        clone.querySelector("img").setAttribute("alt", item.personaje);
+        clone.querySelector("p").textContent = `Casa: ${item.casaDeHogwarts}`;
+        clone.querySelector(".pelicula").dataset.casaDeHogwarts = item.casaDeHogwarts;
         fragment.appendChild(clone);
     });
     personajes.appendChild(fragment);
@@ -41,7 +40,7 @@ const filterCards = () => {
     const filter = document.getElementById("house-filter").value;
     const cards = document.querySelectorAll(".pelicula");
     cards.forEach(card => {
-        if (filter === "all" || card.dataset.house === filter) {
+        if (filter === "all" || card.dataset.casaDeHogwarts === filter) {
             card.style.display = "block";
         } else {
             card.style.display = "none";
