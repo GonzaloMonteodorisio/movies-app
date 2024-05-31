@@ -6,7 +6,7 @@ const userPassword = document.querySelector("#userPassword")
 
 const regUserName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 const regUserEmail =
-  /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
+/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
 const alertName = document.querySelector("#alertName");
 const alertEmail = document.querySelector("#alertEmail");
