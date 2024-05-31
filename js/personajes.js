@@ -36,9 +36,20 @@ const pintarCard = data => {
     lazyLoadImages();
 };
 
+const noElementHasDisplayBlock = (htmlCollection) => {
+    for (let i = 0; i < htmlCollection.length; i++) {
+      const element = htmlCollection[i];
+      if (window.getComputedStyle(element).display === "block") {
+        return false;
+      }
+    }
+    return true; 
+  }
+
 const filterCards = () => {
     const filter = document.getElementById("house-filter").value;
     const cards = document.querySelectorAll(".pelicula");
+
     cards.forEach(card => {
         if (filter === "all" || card.dataset.casaDeHogwarts === filter) {
             card.style.display = "block";
@@ -46,6 +57,14 @@ const filterCards = () => {
             card.style.display = "none";
         }
     });
+    
+    if (noElementHasDisplayBlock(cards)) {
+        const personajes = document.querySelector(".personajes");
+        const mensaje = document.createElement("h3");
+        mensaje.textContent = "Por el momento no hay personajes disponibles para esta casa"
+        personajes.appendChild(mensaje);
+    }
+
 };
 
 const loadingData = (estado) => {
