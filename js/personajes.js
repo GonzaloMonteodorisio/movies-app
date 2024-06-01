@@ -54,15 +54,23 @@ const filterCards = () => {
         if (filter === "all" || card.dataset.casaDeHogwarts === filter) {
             card.style.display = "block";
         } else {
+            const mensaje = document.querySelector(".contenedor-mensaje");
+            if (mensaje) {
+                mensaje.style.display = "none";
+            }
             card.style.display = "none";
         }
     });
-    
+
     if (noElementHasDisplayBlock(cards)) {
         const personajes = document.querySelector(".personajes");
-        const mensaje = document.createElement("h3");
-        mensaje.textContent = "Por el momento no hay personajes disponibles para esta casa"
-        personajes.appendChild(mensaje);
+        const contenedorMensaje = document.createElement("div");
+        contenedorMensaje.classList.add("contenedor-mensaje");
+        const mensaje = document.createElement("h4");
+        mensaje.classList.add('nuevo-mensaje');
+        mensaje.textContent = "Por el momento no hay personajes disponibles para esta casa";
+        contenedorMensaje.appendChild(mensaje);
+        personajes.appendChild(contenedorMensaje);
     }
 
 };
