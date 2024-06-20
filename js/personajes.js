@@ -24,7 +24,7 @@ const pintarCard = data => {
 
     data.forEach(item => {
         const clone = templateCard.cloneNode(true);
-        clone.querySelector("h3").textContent = item.personaje;
+        clone.querySelector("h2").textContent = item.personaje;
         clone.querySelector("img").setAttribute("data-src", item.imagen);
         clone.querySelector("img").setAttribute("height", "250px");
         clone.querySelector("img").setAttribute("alt", item.personaje);
@@ -66,7 +66,7 @@ const filterCards = () => {
         const personajes = document.querySelector(".personajes");
         const contenedorMensaje = document.createElement("div");
         contenedorMensaje.classList.add("contenedor-mensaje");
-        const mensaje = document.createElement("h4");
+        const mensaje = document.createElement("h3");
         mensaje.classList.add('nuevo-mensaje');
         mensaje.textContent = "Por el momento no hay personajes disponibles para esta casa";
         contenedorMensaje.appendChild(mensaje);

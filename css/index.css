@@ -39,6 +39,9 @@ h1 {
 
 h2 {
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .form-control {
@@ -107,12 +110,6 @@ i {
 
 p {
   font-size: 0.8em;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
 }
 
 .form-contents {
